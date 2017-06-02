@@ -200,6 +200,9 @@ buffer is not visiting a file."
     (find-alternate-file (concat "/sudo:root@localhost:" buffer-file-name))))
 (global-set-key (kbd "C-x r e") 'sudo-edit)
 
+;;; Default web browser
+(setq browse-url-browser-function 'browse-url-generic
+      browse-url-generic-program "tor-browser")
 
 ;;; Local Variables:
 ;;; eval: (outline-minor-mode 1)
