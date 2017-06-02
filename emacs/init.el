@@ -164,7 +164,7 @@
 ;;;*org mode
 ;; (global-set-key (kbd "C-c l") 'org-store-link)
 (setf org-blank-before-new-entry '((heading . nil) (plain-list-item . nil)))
-;; (setf export-babel-evaluate nil)
+;; (setf org-export-babel-evaluate nil)
 
 (defun my-org-mode-config ()
   "For use in `html-mode-hook'."
