@@ -98,9 +98,10 @@
    (quote
     ((auto-mode . emacs)
      ("\\.mm\\'" . default)
-     ("\\.x?html?\\'" . default)
-     ("\\.pdf\\'" . "firefox %s")
-     ("\\.odt\\'" . "libreoffice %s"))))
+     ("\\.x?html?\\'" . "/usr/bin/tor-browser %s")
+     ("\\.pdf\\'" . "/usr/bin/tor-browser %s")
+     ("\\.doc\\'" . "/usr/bin/libreoffice %s")
+     ("\\.odt\\'" . "/usr/bin/libreoffice %s"))))
  '(package-selected-packages (quote (persistent-soft ergoemacs-mode)))
  '(tab-stop-list
    (quote
