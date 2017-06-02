@@ -174,17 +174,17 @@
 (add-hook 'org-mode-hook 'my-org-mode-config)
 
 ;;;*C-h
-(defvar my-overriding-binding-mode-map
-  (let ((map (make-sparse-keymap)))
-    (define-key map [?\C-h] 'delete-backward-char)
-    (define-key map [?\M-h] 'backward-kill-word)
-    map))
+;; (defvar my-overriding-binding-mode-map
+;;   (let ((map (make-sparse-keymap)))
+;;     (define-key map [?\C-h] 'delete-backward-char)
+;;     (define-key map [?\M-h] 'backward-kill-word)
+;;     map))
 
-(define-minor-mode my-overriding-binding-mode
-  "Personal global key-bindings."
-  :global t)
+;; (define-minor-mode my-overriding-binding-mode
+;;   "Personal global key-bindings."
+;;   :global t)
 
-(my-overriding-binding-mode 1)
+;; (my-overriding-binding-mode 1)
 
 ;;;*sudo-edit
 (defun sudo-edit (&optional arg)
