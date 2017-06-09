@@ -79,6 +79,10 @@
          (kill-buffer buffer))) 
      (buffer-list)))
 
+;;;*Program Language
+;;;**C
+(setq c-default-style "linux"
+      c-basic-offset 4)
 ;;;*Appearance
 ;; menu bar
 (menu-bar-mode -1)
