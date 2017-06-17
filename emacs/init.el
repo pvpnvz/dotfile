@@ -98,6 +98,7 @@
  ;; If there is more than one, they won't work right.
  '(auto-save-file-name-transforms (quote ((".*" "~/.emacscache/autosaves/\\1" t))))
  '(backup-directory-alist (quote ((".*" . "~/.emacscache/backups/"))))
+ '(gnus-always-read-dribble-file t)
  '(org-file-apps
    (quote
     ((auto-mode . emacs)
@@ -244,3 +245,12 @@ buffer is not visiting a file."
 ;;; outline-regexp: ";;;\\*+\\|\\`"
 ;;; End:
 
+;;;*Gnus
+(setq gnus-summary-line-format
+      "%U%R%z %d %I %[%3V%] %s\n")
+;; (setq gnus-select-method '(nnspool ""))
+(setq gnus-select-method '(nntp "news.gnus.org"))
+
+;; Agenda clock report parameters
+(setq org-agenda-clockreport-parameter-plist
+      '(:link t :maxlevel 6 :fileskip0 t :compact t :narrow 60 :score 0))
