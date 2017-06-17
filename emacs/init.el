@@ -209,6 +209,9 @@
   (interactive)
   (org-map-entries (lambda () (eos/org-custom-id-get (point) 'create))))
 
+;;;**Clock table
+;; Set default column view headings: Task Priority Effort Clock_Summary
+(setq org-columns-default-format "%50ITEM(Task) %2PRIORITY %10Effort(Effort){:} %10CLOCKSUM")
 ;;;*C-h
 ;; (defvar my-overriding-binding-mode-map
 ;;   (let ((map (make-sparse-keymap)))
