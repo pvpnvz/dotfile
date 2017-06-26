@@ -157,6 +157,9 @@
 		(lambda()(interactive)
 		  (pliakas-duplicate-line t)))
 
+;;;*Comment Line
+(global-set-key (kbd "C-x /") #'comment-line)
+
 ;;;*org mode
 (add-to-list 'load-path "~/.emacs.d/plugins/org-9.0.8/lisp")
 ;; (global-set-key (kbd "C-c l") 'org-store-link)
