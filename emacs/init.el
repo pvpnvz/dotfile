@@ -39,13 +39,14 @@
 ;;;**acejump
 ;; ace-jump-mode
 (add-to-list 'load-path "~/.emacs.d/plugins/ace-jump-mode")
-(autoload
-  'ace-jump-mode
-  "ace-jump-mode"
-  "Emacs quick move minor mode"
-  t)
+(require 'ace-jump-mode)
+;; (autoload
+;;   'ace-jump-mode
+;;   "ace-jump-mode"
+;;   "Emacs quick move minor mode"
+;;   t)
 ;; you can select the key you prefer to
-(define-key global-map (kbd "C-x SPC") 'ace-jump-mode)
+(define-key global-map (kbd "C-x SPC") 'ace-jump-char-mode)
 
 (autoload
   'ace-jump-mode-pop-mark
