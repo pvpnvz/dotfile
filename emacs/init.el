@@ -202,6 +202,10 @@
   (interactive)
   (org-map-entries (lambda () (eos/org-custom-id-get (point) 'create))))
 
+(defun eos/org-add-id-to-current-headline()
+  (interactive)
+  (eos/org-custom-id-get (point) 'create))
+
 ;;;**Clock table
 ;; Set default column view headings: Task Priority Effort Clock_Summary
 (setq org-columns-default-format "%50ITEM(Task) %2PRIORITY %10Effort(Effort){:} %10CLOCKSUM")
