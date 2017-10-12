@@ -164,7 +164,7 @@
 (global-set-key (kbd "C-x /") #'comment-line)
 
 ;;;*org mode
-(add-to-list 'load-path "~/.emacs.d/plugins/org-9.0.8/lisp")
+(add-to-list 'load-path "~/.emacs.d/plugins/org-9.1.2/lisp")
 ;; (global-set-key (kbd "C-c l") 'org-store-link)
 (setf org-blank-before-new-entry '((heading . nil) (plain-list-item . nil)))
 ;; (setf org-export-babel-evaluate nil)
