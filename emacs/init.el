@@ -1,3 +1,5 @@
+(setq dired-deletion-confirmer '(lambda (x) t))
+
 ;;;*package-init
 ;; Added by Package.el.  This must come before configurations of
 ;; installed packages.  Don't delete this line.  If you don't want it,
@@ -66,8 +68,8 @@
 ;; (require 'dired-x)
 ;; ignore hidden file
 (setq-default dired-omit-files-p t) ; this is buffer-local variable
-(setq dired-omit-files
-    (concat dired-omit-files "\\|^\\..+$"))
+;; (setq dired-omit-files
+;;     (concat dired-omit-files "\\|^\\..+$"))
 
 (setq dired-recursive-copies 'always)
 (setq dired-recursive-deletes 'always)
@@ -100,6 +102,7 @@
  '(auto-save-file-name-transforms (quote ((".*" "~/.emacscache/autosaves/\\1" t))))
  '(backup-directory-alist (quote ((".*" . "~/.emacscache/backups/"))))
  '(gnus-always-read-dribble-file t)
+ '(org-extend-today-until 0)
  '(org-file-apps
    (quote
     ((auto-mode . emacs)
